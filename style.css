@@ -1,0 +1,83 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+iframe {
+  margin: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+#contador h2 {
+  margin-bottom: 5px;
+}
+
+.mensagem {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.carrossel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carrossel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.anterior { left: 10px; }
+.proximo { right: 10px; }
+
+.btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
